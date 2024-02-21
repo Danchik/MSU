@@ -1,0 +1,221 @@
+// тип памяти - динамическое
+// тип элементов массива - double
+// вид сортировки - по неубыванию модулей
+// 1 метод сортировки - метод выбора
+// 2 метод сортировки - быстрая сортировка, рекурсивная реализация
+// mas_1 - элементы упорядочены
+// mas_2 - элементы упорядочены в обратном порядке
+// mas_3 - элементы в случайном порядке
+
+#include <stdio.h>
+#include <time.h>   // работа с измерением времени
+#include <stdlib.h> // работа с динамической память, rand()
+#include <math.h>
+
+// объявление типа элементов массива
+typedef double type_arr;
+
+
+// смена двух элементов массива:
+void change(type_arr *a, type_arr *b){
+    type_arr tmp;
+    tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
+
+// сортировка методом выбора
+void selection_sort(type_arr arr[], int n, int *ch, int *comp){
+    for (int i = 0; i < n-1; i++){
+        int min_ind = i;
+        for (int j = i+1; j < n; j++){
+            if (abs(arr[j]) < abs(arr[min_ind])){
+                min_ind = j;
+                *comp+=1;
+            }
+        }
+        change(&arr[i], &arr[min_ind]);
+        *ch+=1;
+    }
+}
+
+// просто сортировка
+void sort_q(type_arr arr[], int n){
+    for (int i = 0; i < n-1; i++){
+        int min_ind = i;
+        for (int j = i+1; j < n; j++){
+            if (arr[j] < arr[min_ind]){
+                min_ind = j;
+            }
+        }
+        change(&arr[i], &arr[min_ind]);
+    }
+}
+
+// просто обратная сортировка
+void sort_rev(type_arr arr[], int n){
+    for (int i = 0; i < n-1; i++){
+        int min_ind = i;
+        for (int j = i+1; j < n; j++){
+            if (arr[j] > arr[min_ind]){
+                min_ind = j;
+            }
+        }
+        change(&arr[i], &arr[min_ind]);
+    }
+}
+
+//////////////////
+// функция разделение массива
+int partition(type_arr arr[], int low, int high) {
+    type_arr pivot = arr[high];
+    int i = low - 1;
+
+    for (int j = low; j <= high - 1; j++) {
+        if ((abs(arr[j])) < (abs(pivot))) {
+            i++;
+            change(&arr[i], &arr[j]);
+        }
+    }
+    change(&arr[i + 1], &arr[high]);
+    return i + 1;
+}
+// функция сортировки
+void quicksort(type_arr arr[], int low, int high) {
+    if (low < high) {
+        int pi = partition(arr, low, high);
+
+        quicksort(arr, low, pi-1);
+        quicksort(arr, pi+1, high);
+    }
+}
+
+////////////////////////////////////
+
+// быстрая сортировка рекурсией
+void fast_sort(type_arr arr[], int n, int *ch, int *comp){
+    int i = 0;
+    int j = n - 1;
+    int mid = n/2;
+    do {
+        while (++(*comp) && (abs(arr[i]) < abs(arr[mid]))) {
+            i++;
+        }
+        while (++(*comp) && (abs(arr[j]) > abs(arr[mid]))) {
+            j--;
+        }
+        if (i <= j) {
+            change(&arr[i], &arr[j]);
+            (*ch)++;
+            i++;
+            j--;
+        }
+    } while (i <= j);
+    if (j > 0){
+        fast_sort(arr, j + 1, *&ch, *&comp);
+    }
+    if (i < n) {
+        fast_sort(&arr[i], n - i, *&ch, *&comp);
+    }
+}
+/*void quick_sort_2(type_arr arr[], int n, int *ch, int *comp){
+    int pivot = arr[0];
+    int j = n - 1;
+    int i = 1;
+    do
+    {
+        while (++(*comp) && abs(arr[i]) < abs(arr[mid])) {
+            i++;
+        }
+        while (++(*comp) && abs(arr[j]) > abs(arr[mid])){
+            j--;
+        }
+
+        if (i <= j){
+            change(&arr[i], &arr[j]);
+            (*ch)++;
+            i++;
+            j--;
+        }
+        change(&arr[0], &arr[j+1]);
+        j--;
+}
+*/
+// заполнение массива случайными числами в диапазоне от -32768 до 32767
+void filling (type_arr a[], int n, int sd, int var){
+    srand(sd);
+    for (int i = 0; i < n; i++){
+        a[i] =(rand())*pow(-1, (rand() % 2 ))+(rand()/10000.0);
+    }
+    if (var == 1){
+        sort_q(a, n);
+    }
+    if (var == 2){
+        sort_rev(a, n);
+    }
+}
+
+//программа
+
+int main(void) {
+    printf("type of filling mas:\n");
+    printf("1 - elements ordered \n");
+    printf("2 - elements reversed ordered\n");
+    printf("3 - elements n random order\n");
+    int var;
+    scanf("%d", &var);
+    for(int siz = 10; siz < 15; siz+=1){
+
+        // объявление памяти
+        type_arr *arr_a = malloc (siz * sizeof(type_arr));
+        type_arr *arr_b = malloc (siz * sizeof(type_arr));
+        srand(time(NULL));
+        int seed_numb = rand();
+        //int seed_numb = 1225331222;
+
+        // заполнение массива
+        filling (arr_a, siz, seed_numb, var);
+        filling(arr_b, siz, seed_numb, var);
+
+        // переменные кол-ва сранения и смены
+        int count_ch_a = 0;
+        int count_ch_b = 0;
+        int count_comp_a = 0;
+        int count_comp_b = 0;
+
+        // выполнение сортировок
+        selection_sort(arr_a, siz, &count_ch_a, &count_comp_a);
+        fast_sort(arr_b, siz, &count_ch_b, &count_comp_b);
+
+        quicksort(arr_b, 0, siz - 1);
+
+        //int resul = 0;
+        printf("\n");
+        for (int q = 0; q < siz; q +=1){
+            printf("[%lf]\n", arr_b[q]);
+        }
+        int ch = 0;
+        for (int i = 1; i < siz; i+=1){
+            if ( (abs(arr_b[i - 1])) > (abs(arr_b[i])) ) {
+                ch = 1;
+            }
+
+        }
+        printf("\n\n%d", ch );
+        printf("\n");
+        // вывод результатов
+        printf("\n");
+        printf("arr A (selection sort)\namount of elements %d\n", siz);
+        printf("changes: %d\ncompares: %d\n", count_ch_a, count_comp_a );
+        printf(". _ . - . _ . - . _ . - \n");
+        printf("arr B (quick sort)\namount of elements %d\n", siz);
+        printf("changes: %d\ncompares: %d\n", count_ch_b, count_comp_b );
+        printf("\n");
+        printf("------------------------------|\n");
+
+        // очищение памяти
+        free(arr_a);
+        free(arr_b);
+    }
+    return 0;
+}
