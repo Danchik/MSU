@@ -59,10 +59,10 @@ void fast_sort(type_arr arr[], int n, int *ch, int *comp){
         }
     } while (i <= j);
     if (j > 0){
-        fast_sort(arr, j + 1, *&ch, *&comp);
+        fast_sort(arr, j + 1, ch, comp);
     }
     if (i < n) {
-        fast_sort(&arr[i], n - i, *&ch, *&comp);
+        fast_sort(&arr[i], n - i, ch, comp);
     }
 }
 

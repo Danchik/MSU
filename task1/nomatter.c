@@ -3,9 +3,6 @@
 // вид сортировки - по неубыванию модулей
 // 1 метод сортировки - метод выбора
 // 2 метод сортировки - быстрая сортировка, рекурсивная реализация
-// mas_1 - элементы упорядочены 
-// mas_2 - элементы упорядочены в обратном порядке
-// mas_3 - элементы в случайном порядке
 
 #include <stdio.h>
 #include <time.h>   // работа с измерением времени
@@ -24,7 +21,7 @@ void change(type_arr *a, type_arr *b){
     *b = tmp;
 }
 
-// сортировка методом выбора 
+// сортировка методом выбора
 void selection_sort(type_arr arr[], int n, int *ch, int *comp){
     for (int i = 0; i < n-1; i++){
         int min_ind = i;
@@ -36,32 +33,6 @@ void selection_sort(type_arr arr[], int n, int *ch, int *comp){
         }
         change(&arr[i], &arr[min_ind]);
         *ch+=1;
-    }
-}
-
-// просто сортировка 
-void sort_q(type_arr arr[], int n){
-    for (int i = 0; i < n-1; i++){
-        int min_ind = i;
-        for (int j = i+1; j < n; j++){
-            if (arr[j] < arr[min_ind]){
-                min_ind = j;
-            }
-        }
-        change(&arr[i], &arr[min_ind]);
-    }
-}
-
-// просто обратная сортировка 
-void sort_rev(type_arr arr[], int n){
-    for (int i = 0; i < n-1; i++){
-        int min_ind = i;
-        for (int j = i+1; j < n; j++){
-            if (arr[j] > arr[min_ind]){
-                min_ind = j;
-            }
-        }
-        change(&arr[i], &arr[min_ind]);
     }
 }
 
@@ -97,39 +68,28 @@ void fast_sort(type_arr arr[], int n, int *ch, int *comp){
 
 
 // заполнение массива случайными числами в диапазоне от -32768 до 32767
-void filling (type_arr a[], int n, int sd, int var){
+void filling (type_arr a[], int n, int sd){
     srand(sd);
     for (int i = 0; i < n; i++){
         a[i] =(rand()/1)*pow(-1, (rand() % 2 ))+(rand()/10000.0);
-    }
-    if (var = 1){
-        sort_q(a, n);
-    }
-    if (var = 2){
-        sort_rev(a, n);
+        //a[i] = ((double)rand() / RAND_MAX)*RAND_MAX;
     }
 }
 
-//программа
 
 int main() {
-    printf("type of filling mas:\n");
-    printf("1 - elements ordered \n");
-    printf("2 - elements reversed ordered\n");
-    printf("3 - elements n random order\n");
-    int var;
-    scanf("%d", var);
-    for(int siz = 10; siz < 11; siz+=1){
 
+    //clock_t t_a, t_b;
+    for(int siz = 1000; siz < 1001; siz+=10){
+        srand(time(NULL));
         // объявление памяти
         type_arr *arr_a = malloc (siz * sizeof(type_arr));
         type_arr *arr_b = malloc (siz * sizeof(type_arr));
-        //int seed_numb = rand();
-        int seed_numb = 1225331222;
+        int seed_numb = rand();
 
         // заполнение массива
-        filling (arr_a, siz, seed_numb, var);
-        filling(arr_b, siz, seed_numb, var);
+        filling (arr_a, siz, seed_numb);
+        filling(arr_b, siz, seed_numb);
 
         // переменные кол-ва сранения и смены
         int count_ch_a = 0;
@@ -138,22 +98,39 @@ int main() {
         int count_comp_b = 0;
 
         // выполнение сортировок
+        //t_a = clock();
         selection_sort(arr_a, siz, &count_ch_a, &count_comp_a);
+        //t_a = clock() - t_a;
+        //double ta = ((double)(t_a))/CLOCKS_PER_SEC; // в секундах
+        //t_b = clock();
         fast_sort(arr_b, siz, &count_ch_b, &count_comp_b);
+        //t_b = clock() - t_b;
+        //double tb = (double)(t_b)/CLOCKS_PER_SEC;
 
+        // вывод массива
+        printf("arr a\namount of elements %d\n", siz);
+        /*for (int i = 0; i < siz; i++){
+            printf("%15lf\n ", arr_a[i]);
+        }*/
         // вывод результатов
-        printf("\n");
-        printf("arr A\namount of elements %d\n", siz);
+        //printf("time arr a - %f\n", ta);
         printf("changes: %d\ncompares: %d\n", count_ch_a, count_comp_a );
-        printf(". _ . - . _ . - . _ . - \n");
-        printf("arr B\namount of elements %d\n", siz);
+        printf("\n");
+
+        printf("arr b\namount of elements %d\n", siz);
+        /*for (int i = 0; i < siz; i++){
+            printf("%15lf\n ", arr_b[i]);
+        }*/
+        // вывод результатов
+        //printf("time arr b - %f\n", tb);
         printf("changes: %d\ncompares: %d\n", count_ch_b, count_comp_b );
         printf("\n");
-        printf("------------------------------|\n");
-
         // очищение памяти
         free(arr_a);
         free(arr_b);
+        printf("----------------\n");
     }
     return 0;
 }
+//генерация чисел
+// сравнение сортировок
