@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.8)  21 FEB 2024 23:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.8)  21 FEB 2024 23:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -739,4 +739,411 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen322
 \Gm@layoutvoffset=\dimen323
 \Gm@dimlist=\toks54
- (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/pstricks-add\pstricks-add.sty (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/pstricks\pstricks.sty
+Package: pstricks 2024/02/02 v0.75 LaTeX wrapper for `PSTricks' (RN,HV)
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks55
+\XKV@tempa@toks=\toks56
+)
+\XKV@depth=\count318
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.tex (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex `pst-fp' v0.06, 2020/11/20 (hv)
+\pstFP@xs=\count319
+\pstFP@xia=\count320
+\pstFP@xib=\count321
+\pstFP@xfa=\count322
+\pstFP@xfb=\count323
+\pstFP@rega=\count324
+\pstFP@regb=\count325
+\pstFP@regs=\count326
+\pstFP@times=\count327
+)
+\psLoopIndex=\count328
+
+`PSTricks' v3.19c  <2024/02/02> (tvz,hv)
+\pst@dima=\dimen324
+\pst@dimb=\dimen325
+\pst@dimc=\dimen326
+\pst@dimd=\dimen327
+\pst@dimg=\dimen328
+\pst@dimh=\dimen329
+\pst@dimm=\dimen330
+\pst@dimn=\dimen331
+\pst@dimo=\dimen332
+\pst@dimp=\dimen333
+\pst@hbox=\box70
+\pst@ibox=\box71
+\pst@boxg=\box72
+\pst@cnta=\count329
+\pst@cntb=\count330
+\pst@cntc=\count331
+\pst@cntd=\count332
+\pst@cntg=\count333
+\pst@cnth=\count334
+\pst@cntm=\count335
+\pst@cntn=\count336
+\pst@cnto=\count337
+\pst@cntp=\count338
+\@zero=\count339
+\pst@toks=\toks57
+--- We are running latex or xelatex ---
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.con) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-color.tex)
+\psunit=\dimen334
+\psxunit=\dimen335
+\psyunit=\dimen336
+\pst@C@@rType=\count340
+\pslinewidth=\dimen337
+\psk@startLW=\dimen338
+\psk@endLW=\dimen339
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-arrows.tex
+\pshooklength=\dimen340
+\pshookwidth=\dimen341
+)
+\pst@customdefs=\toks58
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-dots.tex)
+\pslinearc=\dimen342
+\pst@symbolStep=\dimen343
+\pst@symbolWidth=\dimen344
+\pst@symbolLinewidth=\dimen345
+\everypsbox=\toks59
+\psframesep=\dimen346
+\pslabelsep=\dimen347
+\sh@wgridXunit=\dimen348
+\sh@wgridYunit=\dimen349
+\pst@shift=\dimen350
+\ps@imagectr=\count341
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.con))
+File: pstricks.tex 2024/02/02 v3.19c `PSTricks' (tvz,hv)
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex `pst-fp' v0.06, 2020/11/20 (hv))
+File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/pst-plot\pst-plot.sty
+Package: pst-plot 2011/06/05 v1.00 LaTeX wrapper for `pst-plot' (HV)
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\pst-xkey.sty
+Package: pst-xkey 2005/11/25 v1.6 package wrapper for pst-xkey.tex (HA)
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/multido\multido.sty
+Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/multido\multido.tex  v1.42, 2010/05/14 <tvz>
+\multido@count=\count342
+\multidocount=\count343
+\multido@stuff=\toks60
+)
+File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
+)
+Package: pst-plot 2021/09/23 package wrapper for pst-plot.tex (hv)
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pst-plot\pst-plot.tex (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pst-tools\pst-tools.tex `PST-tools' v0.12, 2021/09/23 (hv)
+\randomi=\count344
+\ranval=\count345
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pstricks-add\pstricks-add.tex (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pst-node\pst-node.tex  v1.43, 2022/01/31
+\psrow=\count346
+\pscol=\count347
+\psmatrixcnt=\count348
+\psrowsep=\skip62
+\pscolsep=\skip63
+\pst@args=\count349
+\num@pts=\count350
+\pst@argcnt=\count351
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pst-arrow\pst-arrow.tex `pst-arrow' v0.05, 2021/11/16 (dr,hv)) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pst-3d\pst-3d.tex `PST-3d' v1.11, 2010/02/14 (tvz)) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pst-math\pst-math.tex `pst-math' v0.67 , (CJ,hv)) `pstricks-add' v3.94, 2023/04/17 (dr,hv)
+\psparallelogramsep=\dimen351
+\pst@cntC=\count352
+\pst@stepcount=\count353
+\chart@ColorIndex=\dimen352
+\chart@ColorStep=\dimen353
+\pst@chartHeight=\dimen354
+\pst@chartStackDepth=\dimen355
+\pst@chartStackWidth=\dimen356
+\chart@Toggle=\count354
+\psVectorCtr=\count355
+)  v1.94, 2022/11/21 (tvz,hv)
+\pstRadUnit=\dimen357
+\pstRadUnitInv=\dimen358
+\pst@linecnt=\count356
+\RCD@file=\read4
+\psxlabelsep=\dimen359
+\psylabelsep=\dimen360
+\psk@subticksize=\dimen361
+\pst@xticksizeA=\dimen362
+\pst@xticksizeB=\dimen363
+\pst@xticksizeC=\dimen364
+\pst@yticksizeA=\dimen365
+\pst@yticksizeB=\dimen366
+\pst@yticksizeC=\dimen367
+\@digitcounter=\count357
+\psk@llx=\dimen368
+\psk@lly=\dimen369
+\psk@urx=\dimen370
+\psk@ury=\dimen371
+\pst@xunit=\dimen372
+\pst@yunit=\dimen373
+)
+File: pst-plot.tex 2022/11/21 1.94 `pst-plot' (tvz,hv)
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/pst-node\pst-node.sty
+Package: pst-node 2012/09/18 v1.01 LaTeX wrapper for `pst-node' (HV)
+Package: pst-node 2010/04/22 package wrapper for pst-node.tex
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pst-node\pst-node.tex)
+File: pst-node.tex 2022/11/21 1.94 `pst-node' (tvz,hv)
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/pst-3d\pst-3d.sty
+Package: pst-3d 2009/07/28 package wrapper for pst-3d.tex (hv)
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pst-3d\pst-3d.tex)
+File: pst-3d.tex 2022/11/21 v1.94 `PST-3d' (hv)
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/pst-math\pst-math.sty
+Package: pst-math 2023/07/03 v 0.67 package wrapper for PSTricks pst-math.tex
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/pst-calculate\pst-calculate.sty
+Package: pst-calculate 2019/01/24 v. 0.02(Herbert Voss) Support for caculations with floating point numbers.
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2024-01-04 L3 programming layer (loader) 
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count358
+\l__pdf_internal_box=\box73
+))
+Package: xparse 2023-10-10 L3 Experimental document command parser
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
+Package: siunitx 2024-02-15 v3.3.12 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count359
+\l__siunitx_number_exponent_fixed_int=\count360
+\l__siunitx_number_min_decimal_int=\count361
+\l__siunitx_number_min_integer_int=\count362
+\l__siunitx_number_round_precision_int=\count363
+\l__siunitx_number_lower_threshold_int=\count364
+\l__siunitx_number_upper_threshold_int=\count365
+\l__siunitx_number_group_first_int=\count366
+\l__siunitx_number_group_size_int=\count367
+\l__siunitx_number_group_minimum_int=\count368
+\l__siunitx_angle_tmp_dim=\dimen374
+\l__siunitx_angle_marker_box=\box74
+\l__siunitx_angle_unit_box=\box75
+\l__siunitx_compound_count_int=\count369
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/translations\translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count370
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+\l__siunitx_table_tmp_box=\box76
+\l__siunitx_table_tmp_dim=\dimen375
+\l__siunitx_table_column_width_dim=\dimen376
+\l__siunitx_table_integer_box=\box77
+\l__siunitx_table_decimal_box=\box78
+\l__siunitx_table_uncert_box=\box79
+\l__siunitx_table_before_box=\box80
+\l__siunitx_table_after_box=\box81
+\l__siunitx_table_before_dim=\dimen377
+\l__siunitx_table_carry_dim=\dimen378
+\l__siunitx_unit_tmp_int=\count371
+\l__siunitx_unit_position_int=\count372
+\l__siunitx_unit_total_int=\count373
+)) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
+\xs_counta=\count374
+\xs_countb=\count375
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pst-math\pst-math.tex)
+File: pst-math.tex 2022/11/21 v1.94 `PST-math' (hv)
+\c@Rand@No=\count376
+\c@Random@Left=\count377
+\c@Random@Right=\count378
+\c@Random@No@max=\count379
+)
+Package: pstricks-add 2021/09/10 v. 0.17 package wrapper for pstricks-add.tex (hv)
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pstricks-add\pstricks-add.tex)
+File: pstricks-add.tex 2022/11/21 v1.94 `PSTricks-add' (hv)
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryintersections.code.tex (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryintersections.code.tex
+\pgf@intersect@solutions=\count380
+)) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryangles.code.tex
+File: tikzlibraryangles.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen379
+)) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count381
+\float@exts=\toks61
+\float@box=\box82
+\@float@everytoks=\toks62
+\@floatcapt=\box83
+)
+\c@problem=\count382
+ (report.aux)
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Info: Redefining \th on input line 44.
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count383
+\scratchdimen=\dimen380
+\scratchbox=\box84
+\nofMPsegments=\count384
+\nofMParguments=\count385
+\everyMPshowfont=\toks63
+\MPscratchCnt=\count386
+\MPscratchDim=\dimen381
+\MPnumerator=\count387
+\makeMPintoPDFobject=\count388
+\everyMPtoPDFconversion=\toks64
+) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+LaTeX Info: Redefining \celsius on input line 44.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 44.
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+LaTeX Info: Redefining \ohm on input line 44.
+Package gensymb Info: Using \Omega for \ohm on input line 44.
+
+Package gensymb Warning: Not defining \micro.
+
+Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.12).
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=674.33032pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package translations Info: no dictionary file `translations-basic-dictionary-russian.trsl' found. on input line 44.
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 44.
+ (titlepage.tex
+<msu_logo.png, id=4, 452.69125pt x 200.75pt>
+File: msu_logo.png Graphic file (type png)
+<use msu_logo.png>
+Package pdftex.def Info: msu_logo.png  used on input line 24.
+(pdftex.def)             Requested size: 128.0387pt x 56.77936pt.
+ [1
+Non-PDF special ignored!
+<special> header=pstricks.pro
+Non-PDF special ignored!
+<special> header=pst-algparser.pro
+Non-PDF special ignored!
+<special> header=pst-tools.pro
+Non-PDF special ignored!
+<special> header=pst-dots.pro
+Non-PDF special ignored!
+<special> header=pst-node.pro
+Non-PDF special ignored!
+<special> header=pst-3d.pro
+Non-PDF special ignored!
+<special> header=pst-math.pro
+Non-PDF special ignored!
+<special> header=pstricks-add.pro
+
+Non-PDF special ignored!
+<special> ps: /pssetRGBcolor /setrgbcolor load def /pssetCMYKcolor /setcmyk...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+{C:/Users/Admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./msu_logo.png>])
+LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 92.
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 92.
+ (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+Overfull \hbox (19.68626pt too wide) in paragraph at lines 129--129
+[]\T2A/cmr/bx/n/17.28 Асимптотическая слож-ность ал-го-рит-мов по-ис-ка сум-
+ []
+
+[1] [2] [3] (report.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 53285 strings out of 474485
+ 1408880 string characters out of 5743735
+ 2277817 words of memory out of 5000000
+ 74886 multiletter control sequences out of 15000+600000
+ 567259 words of font info for 62 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 118i,20n,122p,1970b,2255s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk> <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on report.pdf (4 pages, 152136 bytes).
+PDF statistics:
+ 186 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+
