@@ -1,0 +1,5 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {1}title1}{1}{}%
+\contentsline {subsection}{\numberline {1.1}title2}{1}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}title3}{1}{}%
+\contentsline {paragraph}{title4}{1}{}%

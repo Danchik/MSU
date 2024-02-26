@@ -64,7 +64,7 @@ unsigned timing(bool (*search)(int a[], int size, int needed), int sample_size, 
     for (int iteration = 0; iteration < sample_size; iteration++){
         int needed = generate_needed(0,check_size,average,binomial);
         search(a,check_size,needed);
-    }
+    } 
     auto end = std::chrono::steady_clock::now();
     auto time_span = std::chrono::duration_cast<std::chrono::milliseconds>(end-begin);
     return time_span.count();

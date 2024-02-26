@@ -1,0 +1,7 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {1}Постановка задачи}{1}{}%
+\contentsline {section}{\numberline {2}Результаты экспериментов}{2}{}%
+\contentsline {section}{\numberline {3}Структура программы и спецификация функций}{3}{}%
+\contentsline {section}{\numberline {4}Отладка программы, тестирование программы}{4}{}%
+\contentsline {section}{\numberline {5}Анализ допущенных ошибок}{5}{}%
+\contentsline {section}{\numberline {6}Литература}{6}{}%

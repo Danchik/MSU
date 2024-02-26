@@ -1,0 +1,201 @@
+\documentclass[a4paper,12pt]{article} %(sets the paper size, sets the font size)
+
+% userpackage - special libraries
+\usepackage[T2A]{fontenc} 
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel} %орфография
+\usepackage{circuitikz} % рисовать схемы (резисторы)
+\usepackage{wrapfig} %картинка сбоку от текста
+\usepackage{makecell} % 
+\usepackage{tabularx} % кручу таблицы
+\usepackage{graphicx} % графика
+\usepackage{float} %
+\usepackage{gensymb} % доп символы
+\usepackage{cancel} %cancel symbol (зачеркивание)
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % красивые буквы
+
+%tikz (draw)
+
+\usepackage{tikz} % рисование 
+
+%tikz libraries
+
+\usetikzlibrary{intersections} 
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{calc,angles,positioning}
+
+
+
+\parindent=0ex % красная строка (ее отсутсвие)
+
+
+
+
+
+\graphicspath{ {C:/Users/Admin/Documents/TEX/test} }
+
+% выпендреж с собственными командами
+\newcommand{\R}{{\mathbb R}}
+\newcommand{\N}{{\mathbb N}}
+\newcommand{\fancy}[1]{{\mathbb{#1}}}
+\DeclareMathOperator{\sgn}{sgn}
+\newcommand{\uni}{\cup}
+\newcommand{\inter}{\cap}
+
+\begin{document}
+	%\input{titlepage0.tex} % insert title page
+	
+	\begin{center}
+		МОСКОВСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ \\
+		ИМ. М.В. ЛОМОНОСОВА \\
+		
+		
+		\hfill \break % горизонтальное заполнение
+		Факультет вычислительной математики и кибернетики\\
+		\vspace{2.5cm}  %вертикальный разрыв
+		\large{\textbf{Отчет по заданию № 1}}\\ %textbf - bold face
+		\hfill \break
+		\\
+	\end{center}
+	
+	\begin{flushright}  %резко вправо
+		Автор:\\
+		Студент гр. 106\\
+		Кондрашов Д.С.
+	\end{flushright}
+	
+	\vspace{7cm}
+	
+	\begin{center}
+		\includegraphics[width=0.3\linewidth]{msu_logo}
+	\end{center}
+	\vfill % заполнение до конца страницы
+	\begin{center} Москва, 2024 \end{center}
+	\thispagestyle{empty} %отсутсвие нумерации на странице
+
+	%new page
+	\newpage
+	\pagenumbering{arabic} % тип последующей нумерации страниц
+	
+	\tableofcontents %оглавление
+	\section*{дебильное название} % * - пропуск нумерации
+	\section{title1} % тема
+	\subsection{title2} % подтема
+	\subsubsection{title3}
+	\paragraph{title4} 
+
+	% writing an equation
+	\begin{equation}		
+		\int 3x^2dx
+		\label {eq 1}
+	\end{equation}
+	%writing an equation
+	\[
+	\int 4x^2 dx
+	\]
+	\eqref{eq 2}
+	\begin{eqnarray}
+		x = x \\ \label{eq 2} \\
+		x = z \\
+		z = u  
+	\end{eqnarray}
+	\eqref{eq 2}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{msu_logo}
+		\caption{}
+		\label{fig:msulogo}
+	\end{figure}
+	\begin{figure} [H]
+		\begin{tabular}{|c|c|c|c|cllllll}
+			\hline
+			4 & 4 & 1 & 5 & 7 & 3& & &3 & & 6 \\
+			\hline
+			1 & 0 & 0 & 0 & 1 & & & & & & \\
+			\hline
+			& 0 & 0 & 1 &  & & & & & & \\
+			\hline& & & & & & & & & & 
+		\end{tabular}
+		\centering
+	\end{figure}
+	\textit{\textbf{бла бла бла}}
+
+	\begin{center}
+        Selection sort $O(n^2)$ % $уравнение$
+    \end{center}
+	\begin{enumerate}
+        \item 
+    \end{enumerate}
+
+
+	% график
+	\begin{figure}[H]
+        \centering
+    \begin{tikzpicture}[scale=0.8]
+        \begin{axis}[
+            name=plot1,
+            title={Linear search},
+            xlabel={Array length},
+            ylabel={t, ms},
+            legend pos=north west,
+            ymajorgrids=true,
+            xmajorgrids=true,
+            grid style=dashed,
+        ]
+        
+        \addplot[
+            color=red,
+            label=l1,
+            ]
+            coordinates {
+                (100,1)(105,2)
+            };
+            \addlegendentry{worst}
+        \addplot[
+            color=blue,
+            label=l1,
+            ]
+            coordinates {
+                (100,1)(105,0)	
+			};
+            \addlegendentry{average} % добавление в легенду
+
+        \end{axis}
+        \begin{axis}[
+            name=plot2,
+            at=(plot1.outer south east),  % расположение anchor относительно первого
+            anchor=outer south west, % расположение anchor относительно второго 
+            title={Binary search},
+            xlabel={Array length},
+            ylabel={t, ms},
+            legend pos=south east,
+            ymajorgrids=true, % сетка 
+            xmajorgrids=true, % сетка
+            grid style=dashed,
+        ]
+        \addplot[
+            color=red,
+            label=l1,
+            smooth,
+            ]
+            coordinates {
+                (100,51)(105,51)
+            };
+            \addlegendentry{worst}
+        \addplot[
+            color=blue,
+            label=l1,
+            smooth,
+            ]
+            coordinates {
+                (100,48)(105,48)
+            };
+            \addlegendentry{average}
+
+        \end{axis}
+    \end{tikzpicture}
+    \end{figure}
+	
+	
+	
+\end{document}
