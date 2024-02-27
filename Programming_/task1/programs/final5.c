@@ -93,11 +93,7 @@ void fast_sort(type_arr arr[], int n, int *ch, int *comp){
         }
         
     } while (i <= j);
-    for (int k = 0; k < n; k+=1)
-        {
-            printf("%.2lf\\qquad ", arr[k]);
-        }
-    printf("\n");
+
     if (j > 0){
         fast_sort(arr, j + 1, *&ch, *&comp);
     }
