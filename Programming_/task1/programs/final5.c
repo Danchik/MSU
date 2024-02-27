@@ -39,6 +39,7 @@ void selection_sort(type_arr arr[], int n, int *ch, int *comp){
             change(&arr[i], &arr[min_ind]);
             *ch+=1;
         }
+        
     }
 }
 
@@ -84,12 +85,19 @@ void fast_sort(type_arr arr[], int n, int *ch, int *comp){
             j--;
         }
         if (i <= j) {
+
             change(&arr[i], &arr[j]);
             (*ch)++;
             i++;
             j--;
         }
+        
     } while (i <= j);
+    for (int k = 0; k < n; k+=1)
+        {
+            printf("%.2lf\\qquad ", arr[k]);
+        }
+    printf("\n");
     if (j > 0){
         fast_sort(arr, j + 1, *&ch, *&comp);
     }
@@ -121,7 +129,7 @@ float sred(int a[], int y)
     {
         s+=a[i];
     }
-    float sr = s / y;
+    float sr = (float)s / y;
     return sr;
 }
 
@@ -135,17 +143,17 @@ int main() {
     int var;
     scanf("%d", &var);
     // int y = 100;
-    int siz = 10;
-    //for(int siz = y; siz < 10 * y; siz+=y)
+    int siz = 7; // размер нашего массива
+    int siz2 = 1; // количество прогонов для нахождения среднего
 
     // создание массивов для подсчета среднего количества сравнений и смен
-    int arr_ch_a[siz] = {};
-    int arr_ch_b[siz] = {};
-    int arr_comp_a[siz] = {};
-    int arr_comp_b[siz] = {};
+    int arr_ch_a[siz2] = {};
+    int arr_ch_b[siz2] = {};
+    int arr_comp_a[siz2] = {};
+    int arr_comp_b[siz2] = {};
 
     // цикла для проверок массивов 
-    for(int y = 0; y < siz ; y+=1)
+    for(int y = 0; y < siz2 ; y+=1)
     {
         // объявление памяти
         type_arr *arr_a = malloc (siz * sizeof(type_arr));
@@ -189,9 +197,12 @@ int main() {
         printf("------------------------------|\n");*/
         //printf("\n%d\n",siz/y);
 
+        /*
         printf("\n");
         printf("\tSort:\t     Selection         Quick\n");
         printf("\tchanges: %10d\t %10d\n\tcompares: %10d\t%11d\n",count_ch_a,count_ch_b,count_comp_a, count_comp_b);
+        */
+
         // очищение памяти
         free(arr_a);
         free(arr_b);
@@ -200,10 +211,8 @@ int main() {
     }
 
     // подсчет средних значений
-    printf("\n\nSelection sort: chang: %f\t comp: %f", sred(arr_ch_a, siz), sred(arr_comp_a, siz));
-    printf("\nQuick sort: chang: %f\t comp: %f", sred(arr_ch_b, siz), sred(arr_comp_b, siz));
-    
-
-
+    printf("\n\nSelection sort: chang: %f\t comp: %f", sred(arr_ch_a, siz2), sred(arr_comp_a, siz2));
+    printf("\nQuick sort: chang: %f\t comp: %f", sred(arr_ch_b, siz2), sred(arr_comp_b, siz2));
+    printf("\n\n");
     return 0;
 }
